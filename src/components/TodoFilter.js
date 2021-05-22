@@ -1,8 +1,20 @@
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Dropdown, DropdownButton } from "react-bootstrap";
 
 export default function TodoFilter({ onFilterSelect }) {
   return (
-    <Container className="mb-3">
+    // <DropdownButton id="dropdown-item-button" title="Choose">
+    //   <Dropdown.Item as="button" onClick={() => onFilterSelect("all")}>
+    //     All
+    //   </Dropdown.Item>
+    //   <Dropdown.Item as="button" onClick={() => onFilterSelect("complete")}>
+    //     Complete
+    //   </Dropdown.Item>
+    //   <Dropdown.Item as="button" onClick={() => onFilterSelect("incomplete")}>
+    //     Incomplete
+    //   </Dropdown.Item>
+    // </DropdownButton>
+
+    <div className="mb-3 text-center">
       <Button variant="outline-primary" onClick={() => onFilterSelect("all")}>
         All
       </Button>
@@ -18,6 +30,6 @@ export default function TodoFilter({ onFilterSelect }) {
       >
         Incomplete
       </Button>
-    </Container>
+    </div>
   );
 }

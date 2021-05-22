@@ -15,9 +15,11 @@ export default function Logout() {
       {redirect === true ? (
         <Redirect to="/" />
       ) : (
-        <Button className="" variant="danger" onClick={logout}>
-          Log out
-        </Button>
+        <div className="text-end">
+          <Button variant="danger" onClick={logout}>
+            Log out
+          </Button>
+        </div>
       )}
     </React.Fragment>
   );
